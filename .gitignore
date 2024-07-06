@@ -6,6 +6,10 @@
 *.lo
 *.o
 *.obj
+/.vs
+/x64
+*.vcxproj.filters
+*.vcxproj.user
 
 # Precompiled Headers
 *.gch
