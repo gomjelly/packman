@@ -5,6 +5,8 @@
 packman::packman(QWidget* parent)
     : QMainWindow(parent)
 {
+    setWindowIcon(QIcon(":/resource/mummy.png"));
+
     m_open = new QPushButton("open");
     m_version = new QLineEdit();
     m_date = new QLineEdit();

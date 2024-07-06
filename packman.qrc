@@ -1,4 +1,6 @@
 <RCC>
-    <qresource prefix="packman">
+    <qresource prefix="/">
+        <file>resource/box.png</file>
+        <file>resource/mummy.png</file>
     </qresource>
 </RCC>
