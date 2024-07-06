@@ -1,16 +1,27 @@
 #pragma once
 
-#include <QtWidgets/QMainWindow>
-#include "ui_packman.h"
+#include <QtWidgets>
 
 class packman : public QMainWindow
 {
     Q_OBJECT
-
 public:
-    packman(QWidget *parent = nullptr);
+    packman(QWidget* parent = nullptr);
     ~packman();
 
+public slots:
+    void startUnPack();
+
 private:
-    Ui::packmanClass ui;
+    QPushButton* m_open;
+    QLineEdit* m_path;
+    QTextEdit* m_centralEdit;
+    QLineEdit* m_version;
+    QLineEdit* m_date;
+    QLineEdit* m_count;
+    QPushButton* m_generate;
+    QTextEdit* m_log;
+    QStringList m_files;
+    QString m_rootDirectory;
 };
+
